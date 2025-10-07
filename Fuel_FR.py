@@ -95,7 +95,7 @@ for station in root.findall("./pdv"):
 	       		if date<price.get("maj")[0:10]: date=price.get("maj")[0:10]
 
 Prange=round(Pmax-Pmin,3)
-
+# order/ sorting
 P0_5=round(Pmin+Prange*0.05,3)
 P5_10=round(Pmin+Prange*0.1,3)
 P11_20=round(Pmin+Prange*0.2,3)
@@ -122,7 +122,7 @@ for station in root.findall("./pdv"):
 			name=price.get("nom")+" "+price.get("valeur") + " " + price.get("maj")[2:10]+" "
 			thePrice=float(price.get("valeur"))		
 		desc=desc+"\t"+price.get("nom")+" "+price.get("valeur") + "€ " + price.get("maj")[2:10]+"&lt;br&gt;\n"
-		
+	# emoticon for services	
 	for service in station.findall(".//service"):
 		if (service.text)=="Bar" : name=name+"🍴"
 		if (service.text)=="Restauration sur place" : name=name+"🍴"
@@ -135,7 +135,7 @@ for station in root.findall("./pdv"):
 		if (service.text)=="Station de gonflage" : name=name+"𖥕"
 		if (service.text)=="Toilettes publiques" : name=name+"🚻"
 		if (service.text)=="Wifi" : name=name+"ᯤ"
-		
+	# colors	
 	if thePrice>0 and thePrice<=P0_5: color="10c0f0"            # light blue
 	if P0_5< thePrice and thePrice <=P5_10: color="00842b"      # dark green
 	if P5_10< thePrice and thePrice <=P11_20: color="88e030"    # light green
