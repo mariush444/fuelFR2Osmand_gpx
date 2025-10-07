@@ -57,7 +57,6 @@ print("Start")
 import xml.etree.ElementTree as ET
 import urllib.request
 from zipfile import ZipFile
-import io
 
 # downloading open data with FR fuel prices
 url = "https://donnees.roulez-eco.fr/opendata/instantane"
