@@ -44,7 +44,7 @@ description of the waypoint contains all prices of fuels and their dates that ar
 
 fuel="1"
 DOblack=1
-FilesPath="/storage/26D1-32F6/Download/dev-tmp/fuel/"
+FilesPath="/storage/emulated/0/Download/"
 
 #checking
 if fuel not  in {"1","2","3","4","5","6"}:
