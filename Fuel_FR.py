@@ -38,8 +38,8 @@ some services provided at gas station (represented by icon that I could find in 
 
 description of the waypoint contains all prices of fuels and their dates that are sold at the gas station.
 '''
-# source: https://mariush444.github.io/Osmand-tools/
-# https://github.com/cbosdo/gas-price/tree/osmand
+# source/author: https://github.com/mariush444/fuelFR2Osmand_gpx
+
 
 
 fuel="1"
