@@ -1,6 +1,6 @@
 # fuelFR2Osmand_gpx
 
-converter: from online open data with FR fuel prices to Osmand gpx with ordered prices by colors
+converter: from online open data with FR fuel prices to Osmand gpx with ordered prices by colors <br>
 source of data: https://donnees.roulez-eco.fr/opendata/instantane.zip
 
 "ordered prices" means that prices for specified type of fuel are shown by colore icons from the cheapest to the most expensive:
