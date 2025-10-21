@@ -171,14 +171,14 @@ You can change type of fuel that should be ordered at line ...
 6:"SP98"}
 
 Ordered due to prices means''')
-print(Pmin,"-",P0_5,"blue")
-print(round(P0_5+0.001,3),"-", P5_10, "dark green")
-print(round(P5_10+0.001,3),"-", P11_20, "light green")
-print(round(P11_20+0.001,3),"-", P21_30, "yellow")
-print(round(P21_30+0.001,3),"-" , P31_70, "orange")
-print(round(P31_70+0.001,3),"-",P71_80,"red")
-print(round(P71_80+0.001,3),"-", P81_90,"violet") 
-print(round(P81_90+0.001,3),"-",Pmax,"navy blue / dark blue" )
-print("Black if "+fuelTAB[int(fuel)] +" isn't sold at station")
+print("\033[30;106m", Pmin,"-",P0_5,"blue \033[0m")
+print("\033[48;5;22m" , round(P0_5+0.001,3),"-", P5_10, "dark green \033[0m")
+print("\033[30;102m" , round(P5_10+0.001,3),"-", P11_20, "bright green \033[0m")
+print("\033[30;103m", round(P11_20+0.001,3),"-", P21_30, "yellow \033[0m")
+print("\033[48;5;172m" , round(P21_30+0.001,3),"-" , P31_40, "orange \033[0m")
+print("\033[37;41m" , round(P31_40+0.001,3),"-",P41_80,"red \033[0m")
+print("\033[37;105m" , round(P41_80+0.001,3),"-", P81_90,"violet \033[0m") 
+print("\033[37;44m",  round(P81_90+0.001,3),"-",Pmax,"navy blue / dark blue \033[0m" )
+print("\033[37;40mBlack if "+fuelTAB[int(fuel)] +" isn't sold at station \033[0m ")
 print(''''Black' stations are defined as group 'Absence' and they can be excluded from the view in Osmand
 or they can be excluded from the file (file will be smaller) at line ... by changing the variable DOblack from 1 to 0''')
